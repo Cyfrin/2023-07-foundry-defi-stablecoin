@@ -38,6 +38,10 @@ The following issues can be ignored.
 
 - If the protocol ever becomes insolvent, there is _almost_ no way to recover. This is a known issue. 
 
+# Differential Tests
+
+You can find a nearly idential edition of this code in [Vyper here](https://github.com/Cyfrin/brownie-stablecoin-v23). For gas golfers, doing differential tests on these two contracts might be a great starting point. 
+
 # About
 
 This is Lesson 12 of the[Ultimate Foundry 27-hour Solidity Course](https://www.youtube.com/watch?v=umepbfKp5rI). 
