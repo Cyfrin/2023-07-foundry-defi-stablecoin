@@ -1,13 +1,49 @@
-# Foundry DeFi Stablecoin
+# Foundry DeFi Stablecoin CodeHawks Audit Contest
 
-This is a section of the Cyfrin Foundry Solidity Course.
+## Contest Details 
 
-[DSCEngine Example](https://sepolia.etherscan.io/address/0x091ea0838ebd5b7dda2f2a641b068d6d59639b98#code)
-[Decentralized Stablecoin Example](https://sepolia.etherscan.io/address/0xf30021646269007b0bdc0763fd736c6380602f2f#code)
+- Total Prize Pool: $50,000
+  - HM Awards: $40,000
+  - LQAG Awards: $10,000
+- Starts July 15, 2023
+- Ends August 1st, 2023
+
+## Submissions 
+
+- Submit to [ENTER LINK TO COMPETITION HERE]()
+
+## In Scope
+
+All contracts in `src` are in scope.
+
+*Note on `script` folder*:
+The contracts in `script` are the scripts you can assume are going to be used to deploy and interact with the contracts. If they have an issue that will affect the overall security of the system, they are in scope. However, if they have a security issue that only affects the script and not the overall deployment of the stablecoin protocol, it is out of scope.
+
+## Scope
+```bash
+./src/
+├── DSCEngine.sol
+├── DecentralizedStableCoin.sol
+└── libraries
+    └── OracleLib.sol
+```
+
+Everything else is considered out of scope.
+
+# Known Issues
+
+The following issues can be ignored. 
+
+- A known gas issue, is that we use storage variables instead of immutables for storing the addresses of the collateral. You can ignore this. 
+
+- If the protocol ever becomes insolvent, there is _almost_ no way to recover. This is a known issue. 
 
 # About
 
-This project is meant to be a stablecoin where users can deposit WETH and WBTC in exchange for a token that will be pegged to the USD.
+This is Lesson 12 of the[Ultimate Foundry 27-hour Solidity Course](https://www.youtube.com/watch?v=umepbfKp5rI). 
+
+This project is meant to be a stablecoin where users can deposit WETH and WBTC in exchange for a token that will be pegged to the USD. The system is meant to be such that someone could fork this codebase, swap out WETH & WBTC for any basket of assets they like, and the code would work the same.
+
 
 - [Foundry DeFi Stablecoin](#foundry-defi-stablecoin)
 - [About](#about)
@@ -39,8 +75,8 @@ This project is meant to be a stablecoin where users can deposit WETH and WBTC i
 ## Quickstart
 
 ```
-git clone https://github.com/Cyfrin/foundry-defi-stablecoin-f23
-cd foundry-defi-stablecoin-f23
+git clone https://github.com/Cyfrin/foundry-defi-stablecoin-codehawks
+cd foundry-defi-stablecoin-codehawks
 forge build
 ```
 
@@ -163,15 +199,3 @@ To run code formatting:
 ```
 forge fmt
 ```
-
-
-# Thank you!
-
-If you appreciated this, feel free to follow me or donate!
-
-ETH/Arbitrum/Optimism/Polygon/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
-
-[![Patrick Collins Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PatrickAlphaC)
-[![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
-[![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
-[![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
