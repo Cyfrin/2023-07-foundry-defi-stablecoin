@@ -15,6 +15,8 @@ contract DSCEngineTest is StdCheats, Test {
     int256 public constant INITAL_PRICE = 2000 ether;
 
     function setUp() public {
+        vm.warp(block.timestamp + 4 hours + 1 seconds);
+        vm.roll(block.number + 1);
         aggregator = new MockV3Aggregator(DECIMALS, INITAL_PRICE);
     }
 
