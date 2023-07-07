@@ -1,5 +1,13 @@
 # Foundry DeFi Stablecoin CodeHawks Audit Contest
 
+<br/>
+<p align="center">
+<a href="https://codehawks.com" target="_blank">
+<img src="./img/banner.png" width="400" alt="Code Hawks first audit">
+</a>
+</p>
+<br/>
+
 ## Contest Details 
 
 - Total Prize Pool: $50,000
@@ -49,7 +57,13 @@ This is Lesson 12 of the[Ultimate Foundry 27-hour Solidity Course](https://www.y
 This project is meant to be a stablecoin where users can deposit WETH and WBTC in exchange for a token that will be pegged to the USD. The system is meant to be such that someone could fork this codebase, swap out WETH & WBTC for any basket of assets they like, and the code would work the same.
 
 
-- [Foundry DeFi Stablecoin](#foundry-defi-stablecoin)
+- [Foundry DeFi Stablecoin CodeHawks Audit Contest](#foundry-defi-stablecoin-codehawks-audit-contest)
+  - [Contest Details](#contest-details)
+  - [Submissions](#submissions)
+  - [In Scope](#in-scope)
+  - [Scope](#scope)
+- [Known Issues](#known-issues)
+- [Differential Tests](#differential-tests)
 - [About](#about)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
@@ -65,7 +79,6 @@ This project is meant to be a stablecoin where users can deposit WETH and WBTC i
   - [Scripts](#scripts)
   - [Estimate gas](#estimate-gas)
 - [Formatting](#formatting)
-- [Thank you!](#thank-you)
 
 # Getting Started
 
