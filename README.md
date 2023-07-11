@@ -3,7 +3,7 @@
 <br/>
 <p align="center">
 <a href="https://codehawks.com" target="_blank">
-<img src="https://raw.githubusercontent.com/Cyfrin/2023-07-foundry-defi-stablecoin/main/img/banner.png" width="400" alt="Code Hawks first audit">
+<img src="https://github.com/Cyfrin/2023-07-foundry-defi-stablecoin/blob/main/img/banner.png?raw=true" width="400" alt="Code Hawks first audit">
 </a>
 </p>
 <br/>
