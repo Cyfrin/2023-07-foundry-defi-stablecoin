@@ -3,18 +3,18 @@
 <br/>
 <p align="center">
 <a href="https://codehawks.com" target="_blank">
-<img src="./img/banner.png" width="400" alt="Code Hawks first audit">
+<img src="https://raw.githubusercontent.com/Cyfrin/2023-07-foundry-defi-stablecoin/main/img/banner.png" width="400" alt="Code Hawks first audit">
 </a>
 </p>
 <br/>
 
 ## Contest Details 
 
-- Total Prize Pool: $50,000
-  - HM Awards: $40,000
-  - LQAG Awards: $10,000
-- Starts July 15, 2023
-- Ends August 1st, 2023
+- Total Prize Pool: $30,000
+  - HM Awards: $25,000
+  - LQAG Awards: $5,000
+- Starts July 24, 2023
+- Ends August 5th, 2023
 
 ## Submissions 
 
