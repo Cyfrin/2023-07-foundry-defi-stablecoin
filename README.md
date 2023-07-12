@@ -11,8 +11,8 @@
 ## Contest Details 
 
 - Total Prize Pool: $15,000
-  - HM Awards: $12,000
-  - LQAG Awards: $3,000
+  - HM Awards: $14,000
+  - LQAG Awards: $1,000
 - Starts July 24, 2023
 - Ends August 5th, 2023
 
