@@ -20,7 +20,7 @@
 
 ## Submissions 
 
-- Submit to [ENTER LINK TO COMPETITION HERE]()
+- Submit to [CodeHawks](https://www.codehawks.com/contests/cljx3b9390009liqwuedkn0m0)
 
 ## In Scope
 
