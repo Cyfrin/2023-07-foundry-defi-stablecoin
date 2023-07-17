@@ -15,6 +15,8 @@
   - LQAG Awards: $1,000
 - Starts July 24, 2023
 - Ends August 5th, 2023
+- nSLOC: 236
+- Complexity: 177
 
 ## Submissions 
 
