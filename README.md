@@ -46,7 +46,10 @@ The following issues can be ignored.
 
 - A known gas issue, is that we use storage variables instead of immutables for storing the addresses of the collateral. You can ignore this. 
 
-- If the protocol ever becomes insolvent, there is _almost_ no way to recover. This is a known issue. 
+- If the protocol ever becomes insolvent, there is _almost_ no way to recover. This is a known issue.
+
+- EDIT: August 26th, for Judging
+- We don't want the constructor marked as payable, as we like the extra protection it gives us from accidentally deploying a contract with ETH. 
 
 # Differential Tests
 
