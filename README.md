@@ -1,59 +1,18 @@
-# Foundry DeFi Stablecoin CodeHawks Audit Contest
+# Foundry DeFi Stablecoin
 
-<br/>
-<p align="center">
-<a href="https://codehawks.com" target="_blank">
-<img src="https://res.cloudinary.com/droqoz7lg/image/upload/v1689007253/featured/zorxcgolkzoivtb5gubq.png" width="400" alt="Code Hawks first audit">
-</a>
-</p>
-<br/>
+[//]: # (contest-details-open)
 
 ## Contest Details 
 
 - Total Prize Pool: $15,000
   - HM Awards: $14,000
   - LQAG Awards: $1,000
+ 
 - Starts July 24, 2023
 - Ends August 5th, 2023
+
 - nSLOC: 236
 - Complexity: 177
-
-## Submissions 
-
-- Submit to [CodeHawks](https://www.codehawks.com/contests/cljx3b9390009liqwuedkn0m0)
-
-## In Scope
-
-All contracts in `src` are in scope.
-
-*Note on `script` folder*:
-The contracts in `script` are the scripts you can assume are going to be used to deploy and interact with the contracts. If they have an issue that will affect the overall security of the system, they are in scope. However, if they have a security issue that only affects the script and not the overall deployment of the stablecoin protocol, it is out of scope.
-
-## Scope
-```bash
-./src/
-├── DSCEngine.sol
-├── DecentralizedStableCoin.sol
-└── libraries
-    └── OracleLib.sol
-```
-
-Everything else is considered out of scope.
-
-# Known Issues
-
-The following issues can be ignored. 
-
-- A known gas issue, is that we use storage variables instead of immutables for storing the addresses of the collateral. You can ignore this. 
-
-- If the protocol ever becomes insolvent, there is _almost_ no way to recover. This is a known issue.
-
-- EDIT: August 26th, for Judging
-- We don't want the constructor marked as payable, as we like the extra protection it gives us from accidentally deploying a contract with ETH. 
-
-# Differential Tests
-
-You can find a nearly idential edition of this code in [Vyper here](https://github.com/Cyfrin/brownie-stablecoin-v23). For gas golfers, doing differential tests on these two contracts might be a great starting point. 
 
 # About
 
@@ -61,6 +20,7 @@ This is Lesson 12 of the[Ultimate Foundry 27-hour Solidity Course](https://www.y
 
 This project is meant to be a stablecoin where users can deposit WETH and WBTC in exchange for a token that will be pegged to the USD. The system is meant to be such that someone could fork this codebase, swap out WETH & WBTC for any basket of assets they like, and the code would work the same.
 
+[//]: # (contest-details-close)
 
 - [Foundry DeFi Stablecoin CodeHawks Audit Contest](#foundry-defi-stablecoin-codehawks-audit-contest)
   - [Contest Details](#contest-details)
@@ -84,6 +44,49 @@ This project is meant to be a stablecoin where users can deposit WETH and WBTC i
   - [Scripts](#scripts)
   - [Estimate gas](#estimate-gas)
 - [Formatting](#formatting)
+
+[//]: # (scope-open)
+
+## In Scope
+
+All contracts in `src` are in scope.
+
+*Note on `script` folder*:
+The contracts in `script` are the scripts you can assume are going to be used to deploy and interact with the contracts. If they have an issue that will affect the overall security of the system, they are in scope. However, if they have a security issue that only affects the script and not the overall deployment of the stablecoin protocol, it is out of scope.
+
+## Scope
+```bash
+./src/
+├── DSCEngine.sol
+├── DecentralizedStableCoin.sol
+└── libraries
+    └── OracleLib.sol
+```
+
+Everything else is considered out of scope.
+
+[//]: # (scope-close)
+
+[//]: # (known-issues-open)
+
+# Known Issues
+
+The following issues can be ignored. 
+
+- A known gas issue, is that we use storage variables instead of immutables for storing the addresses of the collateral. You can ignore this. 
+
+- If the protocol ever becomes insolvent, there is _almost_ no way to recover. This is a known issue.
+
+- EDIT: August 26th, for Judging
+- We don't want the constructor marked as payable, as we like the extra protection it gives us from accidentally deploying a contract with ETH. 
+
+# Differential Tests
+
+You can find a nearly idential edition of this code in [Vyper here](https://github.com/Cyfrin/brownie-stablecoin-v23). For gas golfers, doing differential tests on these two contracts might be a great starting point. 
+
+[//]: # (known-issues-close)
+
+[//]: # (getting-started-open)
 
 # Getting Started
 
@@ -221,3 +224,4 @@ To run code formatting:
 ```
 forge fmt
 ```
+[//]: # (getting-started-close)
