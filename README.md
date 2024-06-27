@@ -16,7 +16,7 @@
 
 # About
 
-This is Lesson 12 of the[Ultimate Foundry 27-hour Solidity Course](https://www.youtube.com/watch?v=umepbfKp5rI). 
+This is Lesson 12 of the [Ultimate Foundry 27-hour Solidity Course](https://www.youtube.com/watch?v=umepbfKp5rI). 
 
 This project is meant to be a stablecoin where users can deposit WETH and WBTC in exchange for a token that will be pegged to the USD. The system is meant to be such that someone could fork this codebase, swap out WETH & WBTC for any basket of assets they like, and the code would work the same.
 
