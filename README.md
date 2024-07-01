@@ -1,7 +1,5 @@
 # Foundry DeFi Stablecoin
 
-[//]: # (contest-details-open)
-
 ## Contest Details 
 
 - Total Prize Pool: $15,000
@@ -13,6 +11,8 @@
 
 - nSLOC: 236
 - Complexity: 177
+
+[//]: # (contest-details-open)
 
 # About
 
