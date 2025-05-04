@@ -76,6 +76,7 @@ contract Handler is Test {
         if (amountCollateral == 0) {
             return;
         }
+        vm.prank(msg.sender);
         dsce.redeemCollateral(address(collateral), amountCollateral);
     }
 
